@@ -1,0 +1,33 @@
+# Videos
+- Collection of links to lectures, courses and tutorials, in rough chronological order of viewing
+## Youtube
+- [andrej karpathy - intro to llms](https://www.youtube.com/watch?v=zjkBMFhNj_g)
+    - great high level overview of the topic, shareable with others, does not require much prior knowledge
+- pydata
+    - vincent warmerdam [Keynote "Natural Intelligence is All You Need"](https://www.youtube.com/watch?v=C9p7suS-NGk)
+        - use the hiplot library to visualize parallel coordinates
+            - interesting way to easily visualize areas in binary classification feature space dominated by a single class, to develop simple rules as powerful features
+    - [Forecasting Customer Lifetime Value (CLTV) for Marketing Campaigns under Uncertainty with PySTAN](https://www.youtube.com/watch?v=hcQST0RnN_o)
+        - dataset used
+            - https://www.kaggle.com/datasets/baetulo/lifetime-value?select=train.csv
+        - website for talk with code
+            - https://raphaeltamaki.github.io/raphaeltamaki/posts/Forecasting%20Customer%20Lifetime%20Value%20-%20Why%20Uncertainty%20Matters/
+        - uses half cauchy as priors a bunch, worth considering
+        - look up pymc's implemention of marketing mixture models 
+    - [Okke van der Wal - Personalization at Uber scale via causal-driven machine learning | PDAMS 2023](https://www.youtube.com/watch?v=c_dOpCvkNc0)
+        - also discusses CausalML (works at uber)
+        - seems like a very strong framework for evaluating strategies for prioritizing contact among set of leads towards the most persuadable
+    - [Ana Chaloska - To One-Hot or Not: A guide to feature encoding and when to use what | PDAMS 2023](https://www.youtube.com/watch?v=4Opsiqj6gcY)
+        - try taking the log of the target encoding as well
+    - [Cikla & Zhutovsky - Transfer Learning in Boosting Models | PyData Amsterdam 2023](https://www.youtube.com/watch?v=lmQw_B-JP9o)
+        - lgbm has  `booster_.refit(data, label, decay_rate=0.9, **kwargs)`
+            - where the data  and label is the new records
+        - you can also add trees at the end of the process by makng another classifier with an init_model
+            - lgb.LGBMClassifier().fit(X, y, init_model = original_model)
+                - X is the new features
+                - y is the new labels
+        - possibly a interesting way of quickly updating a model
+    - [Van den Bossche - What the PDEP? An overview of some upcoming pandas changes | PyData Amsterdam 2023](https://www.youtube.com/watch?v=z47QwqDUKTo)
+        - in pandas 2.0 , there's a `pd.options.mode.copy_on_write = True`
+            - this gets rid of the copy warning and means that all modification only apply to current df, which massively speeds up chained operations
+            - there's a pyarrow string dtype in 2.1, 
