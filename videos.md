@@ -4,7 +4,7 @@
 - [andrej karpathy - intro to llms](https://www.youtube.com/watch?v=zjkBMFhNj_g)
     - great high level overview of the topic, shareable with others, does not require much prior knowledge
 - pydata
-    - vincent warmerdam [Keynote "Natural Intelligence is All You Need"](https://www.youtube.com/watch?v=C9p7suS-NGk)
+    - [vincent warmerdam - Keynote "Natural Intelligence is All You Need"](https://www.youtube.com/watch?v=C9p7suS-NGk)
         - use the hiplot library to visualize parallel coordinates
             - interesting way to easily visualize areas in binary classification feature space dominated by a single class, to develop simple rules as powerful features
     - [Forecasting Customer Lifetime Value (CLTV) for Marketing Campaigns under Uncertainty with PySTAN](https://www.youtube.com/watch?v=hcQST0RnN_o)
