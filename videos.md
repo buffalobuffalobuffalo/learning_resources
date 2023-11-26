@@ -31,3 +31,6 @@
         - in pandas 2.0 , there's a `pd.options.mode.copy_on_write = True`
             - this gets rid of the copy warning and means that all modification only apply to current df, which massively speeds up chained operations
             - there's a pyarrow string dtype in 2.1, 
+- AI Engineer Summit
+    - [Pydantic is all you need: Jason Liu](https://www.youtube.com/watch?v=yj-wSRJwrrc)
+        - discussion of a bunch of patterns for trying to introuce broadly understood and testable OOP patterns into the construction of LLM apps. Lots of good examples and motivating ideas, no link to the code and at the end of the talk, the QR code didn't show up in his slide
