@@ -34,3 +34,14 @@
 - AI Engineer Summit
     - [Pydantic is all you need: Jason Liu](https://www.youtube.com/watch?v=yj-wSRJwrrc)
         - discussion of a bunch of patterns for trying to introuce broadly understood and testable OOP patterns into the construction of LLM apps. Lots of good examples and motivating ideas, no link to the code and at the end of the talk, the QR code didn't show up in his slide
+
+- tutorial
+	- [Polars: The Next Big Python Data Science Library... written in RUST?](https://www.youtube.com/watch?v=VHqn7ufiilE)
+                - summary of how to do basic operations in polars
+                        - this is a df analysis library written in rust
+
+- [George Hotz | Programming | what is the Q* algorithm? OpenAI Q Star Algorithm | Mistral 7B | PRM800K](https://www.youtube.com/watch?v=2QO3vzwHXhg)
+	- recording of 4h live stream of Hotz
+		-  watched first hour 2023-11-27
+			- going over Q*
+			- usiing a fine tuned 7B model called open hermes 2.5 and integrating it with tinygrad
