@@ -45,3 +45,11 @@
 		-  watched first hour 2023-11-27
 			- going over Q*
 			- usiing a fine tuned 7B model called open hermes 2.5 and integrating it with tinygrad
+
+- [5 Awesome Linux Terminal Tools You Must Know](https://www.youtube.com/watch?v=ghWECXWi9kU)
+    - btop
+        - way better than `top`
+    - tldr
+        - example use cases for various common tools
+    - neofetch
+        - nicely configured sys info
