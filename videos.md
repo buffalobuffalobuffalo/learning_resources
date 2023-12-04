@@ -53,3 +53,6 @@
         - example use cases for various common tools
     - neofetch
         - nicely configured sys info
+
+- [Talk to Your Documents, Powered by Llama-Index](https://www.youtube.com/watch?v=WL7V9JUy2sE)
+    - tutorial for using llamaindex to build a simple talk to your documents RAG
