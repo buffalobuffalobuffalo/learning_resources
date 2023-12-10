@@ -58,3 +58,7 @@
     - tutorial for using llamaindex to build a simple talk to your documents RAG
 
 - [3Blue1Brown - But what is a convolution](https://www.youtube.com/watch?v=KuXjwB4LzSA)
+- Applied Machine Learning Days 
+    - [Developing Llama 2 - Angela Fan](https://www.youtube.com/watch?v=NvTSfdeAbnU)
+
+    - [Building Red Panda - Ce Zhang](https://www.youtube.com/watch?v=zi75gM6ijWw)
