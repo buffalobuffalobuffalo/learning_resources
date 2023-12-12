@@ -62,3 +62,17 @@
     - [Developing Llama 2 - Angela Fan](https://www.youtube.com/watch?v=NvTSfdeAbnU)
 
     - [Building Red Panda - Ce Zhang](https://www.youtube.com/watch?v=zi75gM6ijWw)
+
+- George Hotz
+    - [ Mistral mixtral on a tinybox | AMD P2P multi-GPU mixtral-8x7b-32kseqlen](https://www.youtube.com/watch?v=H40QRJFzThQ)
+        - talks about the [switch transformers](https://arxiv.org/abs/2101.03961) paper, bc apparently the new mistal MOE model has a similar structure to GPT4
+
+- [Mamba - a replacement for Transformers?](https://www.youtube.com/watch?v=ouF-H35atOY)
+    - overview of the recent literature on how this structure may address some of the shortcomings of transformers over long context scenarios.
+    - paper recs
+        - the annotated s4 by albert gu, karan goel and christopher re
+        - mamba: linear-time sequence modeling with selective state spaces by albert gu
+    - this approach does incredibly well on induction heads extrapolation (4000x the length of max training examples vs not better than 2x for the other methods tested)
+    - also performs incredibly well on language modeling
+    - weak on audio waveforms (so good on discrete modalities, bad on continuous)
+    - not compared to things llama size
