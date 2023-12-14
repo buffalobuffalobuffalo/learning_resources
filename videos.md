@@ -76,3 +76,6 @@
     - also performs incredibly well on language modeling
     - weak on audio waveforms (so good on discrete modalities, bad on continuous)
     - not compared to things llama size
+
+- [Vision Transformer Basics](https://www.youtube.com/watch?v=vsqKGZT8Qn8&t=5s)
+    - another video from samuel albanie
