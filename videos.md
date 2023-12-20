@@ -79,3 +79,34 @@
 
 - [Vision Transformer Basics](https://www.youtube.com/watch?v=vsqKGZT8Qn8&t=5s)
     - another video from samuel albanie
+
+- [Self-supervised vision](https://www.youtube.com/watch?v=UaJDdft6BdI)
+    - another samuel albanie
+    - there's no amount of labelled data that can get us to human level perception via supervised learning, to the point where it won't make dumb mistakes or be sensitive to advesarial examples
+    - the motivation is that we should take hints from the development of human perception itself
+    - one early approach
+        - derive labels from the co-occuring input to other modalities and minimise disageement between class labels predicted by each
+        - this starts getting quite close to unsupervised learning
+    - for vision
+        - pretext task
+            - train a computer vision model on a game, where the primary goal is to get it to develop a coherent world model so it can handle generic CV tasks like classification, detection, and segmentation
+                - training on image rotations (where the game is to identify how many degrees an image was rotated from 'rightway up') is a very effective method
+                - another that works surprisingly well is
+                    - image inputs
+                    - convnet
+                    - run k-means on the features from the convnet, with high k 
+                    - use those as labels and use backprop and sgd to train the model
+                    - loop over this process a bunch of times
+                    - it eventually learns strong features for images without labels 
+                - also mentioned
+                    - contrastive learning
+                        - mess around with an image, flip, convolve blurs, resize, crop, etc
+                        - have models evaluate different samples from that original image
+                        - train it to identify that they're the same, thus learning deep understandings of the concepts in the image
+                    - masked autoencoders
+                        - mask 75% of the image
+                        - encode the remaining 25%
+                        - the decoder has to reconstruct the full image
+                        - ends up working pretty well but it's kinda blurry (the issue that often happens with L2 loss)
+
+    - mentions that L2 loss is terrible for multi modal distributions 
