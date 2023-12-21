@@ -115,6 +115,7 @@
         - first in the series of 3 videos about transformers
         - very basic and high level geometric descriptoin of attention
         - intro to a longer course called llm university
+            - [llm university](https://docs.cohere.com/docs/llmu)
     - [The math behind Attention: Keys, Queries, and Values matrices](https://www.youtube.com/watch?v=UPtG_38Oq8o)
         - cosine similarity and dot product are equivalent when the positions of all the elements are on the edge of a unit circle around the origin
             - so if you take the dot product and divide it by the length of the vectors, you get the cosine similarity
