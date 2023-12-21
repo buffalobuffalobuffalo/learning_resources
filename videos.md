@@ -116,3 +116,16 @@
         - very basic and high level geometric descriptoin of attention
         - intro to a longer course called llm university
     - [The math behind Attention: Keys, Queries, and Values matrices](https://www.youtube.com/watch?v=UPtG_38Oq8o)
+        - cosine similarity and dot product are equivalent when the positions of all the elements are on the edge of a unit circle around the origin
+            - so if you take the dot product and divide it by the length of the vectors, you get the cosine similarity
+        - the one used in practice is scaled dot product, which is hte dot product divided by the square root of the vector
+            - this is used to handle what are, in practice, very high dimensional vectors, so this allows you to keep the values closer to zero
+        - when you have a series of tokens in a vector space, you adjust the terms by the weighted sum of their similarities to all other tokens in the series
+        - to avoid divide by zero errors, you take the exponential of the similarities, aka the softmax 
+        - key and query matrices, using linear transformations, help improve the embeddings of the various tokens
+            - the embedding generated is optimized for finding similarities
+                - for example multiply K and Q transpose, then divide by the the square root of the length of the vectors
+            - to derive the values matrix, you take the result of the K,Q operation by doing a matmul on V
+                - the values matrix are the best embedding for find the next word (bc thats the goal of the model)
+            - for multi head, you do this a bunch of times and then concat them all, then transform it into a lower dim matrix via a mechanism that scales the good embeddings up and the bad embeddings down
+            - next video mentions how to initialize K,Q and V
