@@ -110,3 +110,9 @@
                         - ends up working pretty well but it's kinda blurry (the issue that often happens with L2 loss)
 
     - mentions that L2 loss is terrible for multi modal distributions 
+
+    - [The Attention Mechanism in Large Language Models](https://www.youtube.com/watch?v=OxCpWwDCDFQ)
+        - first in the series of 3 videos about transformers
+        - very basic and high level geometric descriptoin of attention
+        - intro to a longer course called llm university
+    - [The math behind Attention: Keys, Queries, and Values matrices](https://www.youtube.com/watch?v=UPtG_38Oq8o)
