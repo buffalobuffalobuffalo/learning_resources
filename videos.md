@@ -130,3 +130,5 @@
                 - the values matrix are the best embedding for find the next word (bc thats the goal of the model)
             - for multi head, you do this a bunch of times and then concat them all, then transform it into a lower dim matrix via a mechanism that scales the good embeddings up and the bad embeddings down
             - next video mentions how to initialize K,Q and V
+    - [Proximal Policy Optimization (PPO) - How to train Large Language Models](https://www.youtube.com/watch?v=TjHH_--7l8g)
+        - The key idea here is that it's an RL approach that trains the policy and value networks simultaneously
