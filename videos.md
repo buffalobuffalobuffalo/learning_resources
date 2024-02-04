@@ -132,3 +132,5 @@
             - next video mentions how to initialize K,Q and V
     - [Proximal Policy Optimization (PPO) - How to train Large Language Models](https://www.youtube.com/watch?v=TjHH_--7l8g)
         - The key idea here is that it's an RL approach that trains the policy and value networks simultaneously
+    - [Yann Lecun - UW ECE 2023-2024 Dean W. Lytle Electrical & Computer Engineering Endowed Lecture Series](https://www.youtube.com/watch?v=d_bdU3LsLzE)
+        - "Objective-Driven AI: Towards Machines that can Learn, Reason, and Plan"
