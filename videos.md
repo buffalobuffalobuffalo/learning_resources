@@ -134,3 +134,15 @@
         - The key idea here is that it's an RL approach that trains the policy and value networks simultaneously
     - [Yann Lecun - UW ECE 2023-2024 Dean W. Lytle Electrical & Computer Engineering Endowed Lecture Series](https://www.youtube.com/watch?v=d_bdU3LsLzE)
         - "Objective-Driven AI: Towards Machines that can Learn, Reason, and Plan"
+    - [Fine tuning Optimizations - DoRA, NEFT, LoRA+, Unsloth](https://www.youtube.com/watch?v=ae2lbmtTY5A)
+    - [Sholto Douglas & Trenton Bricken - How to Build & Understand GPT-7's Mind](https://www.youtube.com/watch?v=UTuuTTnjxMQ&list=PLd7-bHaQwnthaNDpZ32TtYONGVk95-fhF) 
+        - maybe the best podcast episode i've listened to in a year
+        - incredibly inspiring overview of the modern state of llms, with a specific focus on interpretibility
+        - was googling a paper or looking up a term every 5 minutes, incredibly inspiring
+    - [MAMBA and State Space Models explained | SSM explained](https://www.youtube.com/watch?v=vrF3MtGwD0Y)
+        - Great overview of the math and architecture of SSMs and how Mamba improves upon performance 
+            - SSMs can train efficiently even though they're styled like linear RNNs bc many of the terms can be precalculated if you have the entire output, which allows you to create two matrices, K and X, that can be c nvolved
+            - Inference, however, will still need to be done sequentially bc you need to calculate the values for the previous token in the sequence to do the calculation for the next
+            - These have the excellent property that it has a linear cost for inference relative to sequence length while transformers have a quadratic relationship to seq len
+            - *However* transformers work a lot better
+            - Mamba is an improvement (and complication) of the SSM architecture that retains the ability to quickly handle very long sequences while adding flexibility to the training process such that it can compete on performance with transformers
