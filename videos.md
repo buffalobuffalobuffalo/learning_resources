@@ -141,8 +141,9 @@
         - was googling a paper or looking up a term every 5 minutes, incredibly inspiring
     - [MAMBA and State Space Models explained | SSM explained](https://www.youtube.com/watch?v=vrF3MtGwD0Y)
         - Great overview of the math and architecture of SSMs and how Mamba improves upon performance 
-            - SSMs can train efficiently even though they're styled like linear RNNs bc many of the terms can be precalculated if you have the entire output, which allows you to create two matrices, K and X, that can be c nvolved
+            - SSMs can train efficiently even though they're styled like linear RNNs bc many of the terms can be precalculated if you have the entire output, which allows you to create two matrices, K and X, that can be convolved
             - Inference, however, will still need to be done sequentially bc you need to calculate the values for the previous token in the sequence to do the calculation for the next
             - These have the excellent property that it has a linear cost for inference relative to sequence length while transformers have a quadratic relationship to seq len
             - *However* transformers work a lot better in practice
             - Mamba is an improvement (and complication) of the SSM architecture that retains the ability to quickly handle very long sequences while adding flexibility to the training process such that it can compete on performance with transformers
+            - while a naive evaluation of the archictecture would lead you to believe it would be veeeerrrrryyyyy slow and sequential in training, they introduce an algorithmic trick that allows them to do some parallelized computation during training, and then massively optimize it on the GPU instruction level, s/t training time is ok
