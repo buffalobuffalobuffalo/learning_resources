@@ -144,5 +144,5 @@
             - SSMs can train efficiently even though they're styled like linear RNNs bc many of the terms can be precalculated if you have the entire output, which allows you to create two matrices, K and X, that can be c nvolved
             - Inference, however, will still need to be done sequentially bc you need to calculate the values for the previous token in the sequence to do the calculation for the next
             - These have the excellent property that it has a linear cost for inference relative to sequence length while transformers have a quadratic relationship to seq len
-            - *However* transformers work a lot better
+            - *However* transformers work a lot better in practice
             - Mamba is an improvement (and complication) of the SSM architecture that retains the ability to quickly handle very long sequences while adding flexibility to the training process such that it can compete on performance with transformers
