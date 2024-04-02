@@ -147,3 +147,9 @@
             - *However* transformers work a lot better in practice
             - Mamba is an improvement (and complication) of the SSM architecture that retains the ability to quickly handle very long sequences while adding flexibility to the training process such that it can compete on performance with transformers
             - while a naive evaluation of the archictecture would lead you to believe it would be veeeerrrrryyyyy slow and sequential in training, they introduce an algorithmic trick that allows them to do some parallelized computation during training, and then massively optimize it on the GPU instruction level, s/t training time is ok
+    - [Transformers explained | The architecture behind LLMs](https://www.youtube.com/watch?v=ec9IQMiJBhs)
+        - AI Coffee Break 2nd video summarized the transformer
+        - liked her mamba video above so watching this one as well
+    - [3Blue1Brown - But what is a GPT? Visual intro to Transformers | Deep learning, chapter 5](https://www.youtube.com/watch?v=wjZofJX0v4M)
+    - [Steve Brunton - AI/ML+Physics Part 2: Curating Training Data - Physics Informed Machine Learning](https://www.youtube.com/watch?v=g-S0m2zcKUg)
+        - intro lecture to a new series that looks really promising
